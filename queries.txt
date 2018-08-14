@@ -1,0 +1,14 @@
+Find the album titled "Vinicius De Moraes", and then use an association-provided method to find all its tracks.
+1. Album.find_by(title: "Vinicius De Moraes").tracks
+Find the artist called "Philip Glass Ensemble", and then use an association-provided method to find all their albums.
+2. Artist.find_by(name: "Philip Glass Ensemble").albums
+Find the "Brazilian Music" playlist and then use an association-provided method to find all its tracks.
+3. Playlist.find_by(name: 'Brazilian Music').tracks
+Find the "Jazz" genre and then use an association-provided method to find all its tracks.
+4. Genre.find_by(name: 'Jazz').tracks
+Find the track "My Time After Awhile" and then use an association-provided method to find its genre.
+5. Track.find_by(name: 'My Time After Awhile').genre
+Use an association-provided method to find the media type of that same track.
+6. Track.find_by(name: 'My Time After Awhile').media_type
+Use an association-provided method to find the album that track appears on.
+7. Track.find_by(name: 'My Time After Awhile').album
